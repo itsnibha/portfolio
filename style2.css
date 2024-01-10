@@ -1,0 +1,141 @@
+ *{
+	margin :0;
+	padding:0;
+	font-family:sans-serif;
+	box-sizing: border-box;
+}
+.header{
+	position: fixed;
+	top:0
+	left:0cm;
+	width: 100%;
+	padding: 20px 30px;
+	background : transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	font-size: 25px;
+	color:#31540;
+	text-decoration: none;
+	font-weight: 700;
+}
+.navbar a{
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+}
+.navbar a:hover{
+	color:blue;
+
+}
+.home{
+	height:100vh ;
+	background:linear-gradient(-90deg,#031540 65%,#fff 35%);
+	display:flex;
+	align-items:center;
+	
+justify-content: space-between;
+padding: 0 10%;
+}
+
+.home-content{
+	max-width: 600px;
+	color:#fff;
+	text-align:right;
+
+}
+.home-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        background: #31540;
+        border-radius: 50%;
+        border: 25px solid white;
+        outline: 25px,solid, #031540;
+        padding : 0 10%;
+        overflow: hidden; /* Add this to hide overflowing content */
+    }
+
+    .home-image img {
+        max-width: 500px; /* Adjusted to ensure the image doesn't exceed the container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Ensure the image also has a circular border */
+    }
+
+.home-content h3{
+	font-size: 55px;
+	line-height:1.2;
+
+}
+.home-content h5{
+	font-size: 40px;
+	color:blue;
+	-webkit-text-stroke:.5px white;
+	background-repeat: no-repeat;
+	-webkit-background-clip:text;
+	background-position: -410px 0 ;
+	animation: animateText 6s linear infinite;
+	}
+
+@keyframes animateText{
+	0%,95%,100%{
+		background-position: -410px 0;
+	}
+	65%,85%{
+		background-position: 0 0;
+	}
+}
+
+
+.home-content p{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.home-sci{
+	margin: 25px 0 40px;
+}
+.home-sci a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid white;
+border-radius: 50%;
+font-size: 20px;
+color:blue;
+text-decoration: none;
+margin-left: 12px;
+transition: .5s;
+
+}
+.home-sci a:hover{
+	background: blue;
+	color: white;
+	border-color: blue;
+	box-shadow: 0 0 10px blue;
+}
+.btn{
+	padding: 12px 35px;
+	background: #00abf0;
+	border-radius: 40px;
+	font-size: 17px;
+	color:white;
+	text-decoration: none;
+	font-weight: 600;
+	letter-spacing: 1px;
+	box-shadow: 0 0 10px #00abf0;
+	transition: .5s;
+	
+}
+.btn:hover{
+box-shadow: none;
+}
